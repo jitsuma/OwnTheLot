@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTL</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .navbar {
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+      }
+
+      .navbar-brand {
+        /* margin-left: 20px; */
+        /* font-size: 20pt; */
+      }
+
+      .home {
+        margin-left: 150px;
+      }
+
+      .nav-item {
+        padding-right: 30px;
+      }
+
+      .btn {
+        margin-right: 100px;
+      }
+
+      #zipcode-section {
+        padding: 20px;
+        padding-bottom: 270px;
+        background: url("Pics/citysketch.png") no-repeat;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+      }
+
+      .Form {
+        text-align: center;
+      }
+
+      .flex-column {
+        text-align: center;
+      }
+      .mainTitle {
+        padding-top: 130px;
+        font-size: 30pt;
+        font-weight: bold;
+      }
+
+      .mainSubtitle {
+        font-size: 15pt;
+      }
+
+      .mainSubtext {
+        font-style: italic;
+      }
+
+      .trusted-info {
+        color: green;
+      }
+
+      .quote-pannel {
+        background-color: rgb(241, 241, 241);
+        margin: auto;
+        padding: 10px;
+      }
+
+      #search {
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      #next {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .flex-row {
+        justify-content: center;
+      }
+
+      .presscoverage {
+        text-align: center;
+      }
+
+      .brands {
+        margin: auto;
+        padding: 20px;
+        background-size: contain;
+        text-align: center;
+      }
+
+      .aboutMain .col-left {
+        padding: 50px;
+        margin-left: 300px;
+      }
+
+      .aboutMain .col-right {
+        padding: 50px;
+        width: 500px;
+      }
+
+      #aboutTitle {
+        font-weight: bold;
+        font-size: 25pt;
+        padding-bottom: 20px;
+      }
+
+      .aboutMain {
+        display: flex;
+      }
+
+      .sampleListings {
+        background-color: rgb(241, 241, 241);
+      }
+
+      .listingsTitle {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .listingBlock {
+        display: flex;
+      }
+
+      .listingBlock .col-left {
+        margin: 20px;
+        padding-left: 200px;
+      }
+
+      .listingBlock .col-right {
+        margin: 20px;
+        padding-right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="home">
+        <img src="Pics/house.svg" width="40" />
+        <a class="navbar-brand ml-2 fs-3.5" href="https://ownthelot.netlify.app"
+          >OwnTheLot</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="redirects" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Properties</a>
+          </li>
+          <li class="nav-item">
+            <button
+              type="button"
+              class="btn btn-outline-success"
+              aria-current="page"
+              href="#"
+            >
+              Search
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div
+      id="zipcode-section"
+      class="d-flex flex-column bd-highlight mb-3"
+      class="section_zipcode-section>"
+    >
+    <header>
+      <div class="mainTitle">Get Affordable Lots!</div>
+  
+      <div class="mainSubtitle">We've Helped Over 100K People</div>
+    </header>
+
+      <div class="quote-pannel">
+        <div class="budget-info">Latest Listing As Low As $500/ mo.</div>
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <input
+            type="zipcode"
+            class="form-control"
+            id="search"
+            placeholder="Enter Zipcode"
+          />
+          <button type="submit" class="btn btn-primary mb-3" id="next">
+            Next
+          </button>
+        </div>
+        <div class="mainSubtext">It only takes 15 seconds.</div>
+      </div>
+
+      <div class="trusted-info">
+        <img src="Pics/padlock.svg" width="20px" /> Trusted by over 2,000,000
+        Americans
+      </div>
+    </div>
+    <div class="presscoverage">Our 2020 Press Coverage:</div>
+    <div class="brands"><img src="Pics/brands.png" alt="brands" /></div>
+
+    <div class="aboutMain">
+      <div class="col-left">
+        <div><img src="Pics/Lots.jpeg" /></div>
+      </div>
+      <div class="col-right">
+        <div id="aboutTitle" class="aboutDesc">A Rental Revolution</div>
+        <div>
+          OwnTheLot is an online rental platform that allows renters to apply
+          for homes quickly and effortlessly by naming your own price, deposit
+          and terms - no signups required! From there, we negotiate on your
+          behalf.
+          <br />
+          <br />
+          A crucial key to getting into your dream home - a complimentary
+          background check is also offered to qualified applicants, so you can
+          be informed as to what shows up on your background report.
+        </div>
+      </div>
+    </div>
+
+    <div class="sampleListings">
+      <h1 class="listingsTitle">Sample Listings You May Like</h1>
+      <div class="listingBlock">
+        <div class="col-left">
+          <img src="Pics/bungalow.png" width="200px" />
+        </div>
+        <div class="col-right">
+          1 Acre Lot $475/month <br />
+          Beautiful Single Family Home <br />
+          In a great family neighborhood <br />
+          High ceilings, air conditioning, sprinklers on timer. Hardwood floors,
+          updated kitchen including stainless steel appliances!
+        </div>
+      </div>
+      <div class="listingBlock">
+        <div class="col-left"><img src="Pics/cluster.png" width="200px" /></div>
+        <div class="col-right">
+          2 Acre Lot $629/month <br />
+          Gorgeous Modern Updated Home <br />
+          On a quiet street <br />
+          This home is located in a tree lined street on a half-acre in a quiet
+          cul-de-sac. Beautiful landscaping, large master bedroom with walk...
+        </div>
+      </div>
+      <div class="listingBlock">
+        <div class="col-left"><img src="Pics/mansion.png" width="200px" /></div>
+        <div class="col-right">
+          3 Acre Lot $1,100/month <br />
+          Beautiful Home With Great Park Views <br />
+          Near a school and park <br />
+          Large Kitchen with tons of cabinetry, granite and counterspace. Heated
+          floors, beautiful views, and a fully landscaped yard...
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
