@@ -17,17 +17,17 @@
       crossorigin="anonymous"
     ></script>
 
-    <style>
+    <!-- <style>
       .navbar {
         justify-content: space-between;
         position: fixed;
         width: 100%;
       }
 
-      .navbar-brand {
+      /* .navbar-brand { */
         /* margin-left: 20px; */
         /* font-size: 20pt; */
-      }
+      /* } */
 
       .home {
         margin-left: 150px;
@@ -152,14 +152,14 @@
         margin: 20px;
         padding-right: 50px;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="home">
+      <div class="container-fluid col-lg px-5 home">
         <img src="Pics/house.svg" width="40" />
-        <a class="navbar-brand ml-2 fs-3.5" href="https://ownthelot.netlify.app"
+        <a class="navbar-brand px-3 fs-3.5 col align-self-start" href="https://ownthelot.netlify.app"
           >OwnTheLot</a
         >
         <button
@@ -173,73 +173,77 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
+      
 
       <div class="redirects" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <a class="nav-link" href="#">About Us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <a class="nav-link" href="#">Testimonials</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <a class="nav-link" href="#">Properties</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <button
               type="button"
               class="btn btn-outline-success"
               aria-current="page"
               href="#"
             >
-              Search 123
+              Search
             </button>
           </li>
         </ul>
       </div>
+    </div>
     </nav>
 
+    <div class="container-fluid col-sm-4">
+      <div
+        id="zipcode-section"
+        class="mb-3"
+        class="section_zipcode-section>"
+      >
+        <header>
+          <div class="mainTitle">Get Affordable Lots!</div>
 
+          <div class="mainSubtitle">We've Helped Over 100K People</div>
+        </header>
 
-    <div
-      id="zipcode-section"
-      class="d-flex flex-column bd-highlight mb-3"
-      class="section_zipcode-section>"
-    >
-    <header>
-      <div class="mainTitle">Get Affordable Lots!</div>
-  
-      <div class="mainSubtitle">We've Helped Over 100K People</div>
-    </header>
-
-      <div class="quote-pannel">
-        <div class="budget-info">Latest Listing As Low As $500/ mo.</div>
-        <div class="d-flex flex-row bd-highlight mb-3">
-          <input
-            type="zipcode"
-            class="form-control"
-            id="search"
-            placeholder="Enter Zipcode"
-          />
-          <button type="submit" class="btn btn-primary mb-3" id="next">
-            Next
-          </button>
+        <div class="quote-pannel">
+          <div class="budget-info">Latest Listing As Low As $500/ mo.</div>
+          <div class="d-flex mb-3">
+            <input
+              type="zipcode"
+              class="form-control"
+              id="search"
+              placeholder="Enter Zipcode"
+            />
+            <button type="submit" class="btn btn-primary mb-3" id="next">
+              Next
+            </button>
+          </div>
+          <div class="mainSubtext">It only takes 15 seconds.</div>
         </div>
-        <div class="mainSubtext">It only takes 15 seconds.</div>
+
+        <div class="trusted-info">
+          <img src="Pics/padlock.svg" width="20px" /> Trusted by over 2,000,000
+          Americans
+        </div>
       </div>
 
-      <div class="trusted-info">
-        <img src="Pics/padlock.svg" width="20px" /> Trusted by over 2,000,000
-        Americans
-      </div>
+      <div class="presscoverage">Our 2020 Press Coverage:</div>
     </div>
-    <div class="presscoverage">Our 2020 Press Coverage:</div>
-    <div class="brands"><img src="Pics/brands.png" alt="brands" /></div>
+      <div class="brands"><img src="Pics/brands.png" alt="brands" /></div>
 
-    <div class="aboutMain">
+
+
+    <div class="aboutMain container">
       <div class="col-left">
-        <div><img src="Pics/Lots.jpeg" /></div>
+        <img src="Pics/Lots.jpeg" />
       </div>
       <div class="col-right">
         <div id="aboutTitle" class="aboutDesc">A Rental Revolution</div>
@@ -255,6 +259,7 @@
           be informed as to what shows up on your background report.
         </div>
       </div>
+      
     </div>
 
     <div class="sampleListings">
