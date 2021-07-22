@@ -153,13 +153,24 @@
         padding-right: 50px;
       }
     </style> -->
+<style>
+  .bkgimg{
+    display:block;
+    background-image: url(Pics/citysketch.png);
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+</style>
+
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid col-lg px-5 home">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+      <div class="container col-lg px-0 home">
         <img src="Pics/house.svg" width="40" />
-        <a class="navbar-brand px-3 fs-3.5 col align-self-start" href="https://ownthelot.netlify.app"
+        <a
+          class="navbar-brand px-3 fs-3.5 col align-self-start"
+          href="https://ownthelot.netlify.app"
           >OwnTheLot</a
         >
         <button
@@ -173,129 +184,198 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      
 
-      <div class="redirects" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item px-3">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="#">Testimonials</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="#">Properties</a>
-          </li>
-          <li class="nav-item px-3">
-            <button
-              type="button"
-              class="btn btn-outline-success"
-              aria-current="page"
-              href="#"
-            >
-              Search
-            </button>
-          </li>
-        </ul>
+        <div class="redirects" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Properties</a>
+            </li>
+            <li class="nav-item px-3">
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                aria-current="page"
+                href="#"
+              >
+                Search
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </nav>
 
-    <div class="container-fluid col-sm-4">
-      <div
-        id="zipcode-section"
-        class="mb-3"
-        class="section_zipcode-section>"
-      >
+    <div class="container text-center bkgimg">
+      <div class="zipcode-section mb-3">
         <header>
-          <div class="mainTitle">Get Affordable Lots!</div>
+          <div class="mainTitle pt-5 fs-1 fw-bold">Get Affordable Lots!</div>
 
-          <div class="mainSubtitle">We've Helped Over 100K People</div>
+          <div class="mainSubtitle fs-3 pb-3">We've Helped Over 100K People</div>
         </header>
 
-        <div class="quote-pannel">
+        <div class="quote-pannel container w-25" style="background-color:rgb(247, 247, 247)">
           <div class="budget-info">Latest Listing As Low As $500/ mo.</div>
-          <div class="d-flex mb-3">
+          <div class="container-sm d-flex my-2">
             <input
               type="zipcode"
               class="form-control"
               id="search"
               placeholder="Enter Zipcode"
             />
-            <button type="submit" class="btn btn-primary mb-3" id="next">
+            <button type="submit" class="btn btn-primary p-3 text-md-center" id="next">
               Next
             </button>
           </div>
-          <div class="mainSubtext">It only takes 15 seconds.</div>
+          <div class="mainSubtext pb-3">It only takes 15 seconds.</div>
         </div>
 
         <div class="trusted-info">
-          <img src="Pics/padlock.svg" width="20px" /> Trusted by over 2,000,000
-          Americans
-        </div>
+          <img src="Pics/padlock.svg" width="20px" /> 
+          <a class="fst-italic text-muted">Trusted by over 2,000,000 Americans</a>
+        </div> 
       </div>
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
 
-      <div class="presscoverage">Our 2020 Press Coverage:</div>
+      <div class="presscoverage pt-5 pb-2">Our 2020 Press Coverage:</div>
     </div>
-      <div class="brands"><img src="Pics/brands.png" alt="brands" /></div>
+    <img src="Pics/brands.png" alt="brands" class="brands mb-5" style="padding-left: 180px"/></div>
 
-
-
-    <div class="aboutMain container">
-      <div class="col-left">
-        <img src="Pics/Lots.jpeg" />
-      </div>
-      <div class="col-right">
-        <div id="aboutTitle" class="aboutDesc">A Rental Revolution</div>
-        <div>
+    <section class="aboutMain container">
+      <div class="row">
+        <img class="col" src="Pics/Lots.jpeg" />
+        <div class="col">
+          <br/>
+          <br/>
+          <h3>A Rental Revolution</h3>
+          <br />
           OwnTheLot is an online rental platform that allows renters to apply
           for homes quickly and effortlessly by naming your own price, deposit
           and terms - no signups required! From there, we negotiate on your
           behalf.
-          <br/>
-          <br/>
+          <br />
+          <br />
           A crucial key to getting into your dream home - a complimentary
           background check is also offered to qualified applicants, so you can
           be informed as to what shows up on your background report.
         </div>
       </div>
-      
-    </div>
+    </section>
 
-    <div class="sampleListings">
-      <h1 class="listingsTitle">Sample Listings You May Like</h1>
-      <div class="listingBlock">
-        <div class="col-left">
+    <main class="sampleListings" style="background-color:rgb(247, 247, 247)">
+      <h1 class="p-md-3 text-center">Sample Listings You May Like</h1>
+      <div class="container">
+      <div class="row">
+        <div class="col">
           <img src="Pics/bungalow.png" width="200px" />
         </div>
-        <div class="col-right">
-          1 Acre Lot $475/month <br />
+        <div class="col">
+          <br>
+          <br>
+          <h4>1 Acre Lot $475/month</h4> <br />
           Beautiful Single Family Home <br />
           In a great family neighborhood <br />
           High ceilings, air conditioning, sprinklers on timer. Hardwood floors,
-          updated kitchen including stainless steel appliances!
+          updated kitchen including stainless steel appliances! <br>
+          <button class="btn btn-primary mt-2">MAKE OFFERS AT $475</button>
         </div>
       </div>
-      <div class="listingBlock">
-        <div class="col-left"><img src="Pics/cluster.png" width="200px" /></div>
-        <div class="col-right">
-          2 Acre Lot $629/month <br />
+      <div class="row">
+        <div class="col"><img src="Pics/cluster.png" width="200px" /></div>
+        <div class="col">
+          <br>
+          <br>
+          <h4>2 Acre Lot $629/month</h4> <br />
           Gorgeous Modern Updated Home <br />
           On a quiet street <br />
           This home is located in a tree lined street on a half-acre in a quiet
-          cul-de-sac. Beautiful landscaping, large master bedroom with walk...
+          cul-de-sac. Beautiful landscaping, large master bedroom with walk...<br>
+          <button class="btn btn-primary mt-2">MAKE OFFERS AT $629</button>
         </div>
       </div>
-      <div class="listingBlock">
-        <div class="col-left"><img src="Pics/mansion.png" width="200px" /></div>
-        <div class="col-right">
-          3 Acre Lot $1,100/month <br />
+      <div class="row">
+        <div class="col"><img src="Pics/mansion.png" width="200px" /></div>
+        <div class="col">
+          <br>
+          <br>
+          <h4>3 Acre Lot $1,100/month</h4> <br />
           Beautiful Home With Great Park Views <br />
           Near a school and park <br />
           Large Kitchen with tons of cabinetry, granite and counterspace. Heated
-          floors, beautiful views, and a fully landscaped yard...
+          floors, beautiful views, and a fully landscaped yard...<br>
+          <button class="btn btn-primary mt-2">MAKE OFFERS AT $1,100</button>
         </div>
       </div>
     </div>
+  </main>
+  
+  <section class="testimonials container">
+    <h2 class="text-center py-5">WHAT OUR CUSTOMERS SAY ABOUT US</h2>
+    <div class="container"></div>
+    <div class="row">
+      <div class="col">
+        <img src="Pics/saitama.png" width="250px">
+      </div>
+      <div class="col">
+        <br>
+        <br>
+        “RentOwn.net allowed me to find the perfect home and help me with the entire process of communicating with the landlord. I couldn’t be happier with the selection of houses and the whole process was really great!”
+        <br>
+        <p class="fw-bold">- Saitama サイタマ</p>
+      </div>
+      <div class="col">
+        <img src="Pics/justinbieber.png" width="250px">
+      </div>
+      <div class="col">
+        <br>
+        <br>
+        “When I was searching for a new home, it was so tiring to pick out listings and negotiate rent. Luckily, RentOwn was there to do everything for me. I never would’ve thought the process could be so easy. Thanks!”
+        <br>
+        <p class="fw-bold">- Justin Bieber</p>
+      </div>
+    </div>
+    
+  </section>
+<footer class="container-fluid" style="background-color:rgb(235, 235, 235)">
+ 
+  <div class="row"> 
+    <div class="col">
+      <img src="Pics/house.svg" width="40">
+    </div>
+    
+    <div class="col">
+      <div>Contact Us:</div>
+      <img src="Pics/call.png" width="15">
+      <a>1(888) 234-5678</a>
+      <img src="Pics/email.png" width="17"> 
+      <a>info@ownthelot.net</a>
+    </div>
+    
+  </div>
+  <div class="row">
+    <p class="pt-2">*Advertiser Disclosure: RentOwn.net is an independent, advertising-supported website. Some offers which appear on RentOwn.net are from companies with which RentOwn.net receives compensation. This compensation may impact the location and order in which these products appear. RentOwn.net does not include the entire universe of available home listings.</p>
+  </div>
+  <div class="row">
+    <img src="Pics/copyright.svg" height="15">
+    <p class="text-center">2021 OwnTheLot.net. All Rights Reserved.</p>
+  </div>
+</footer>
+
   </body>
 </html>
