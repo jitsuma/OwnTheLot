@@ -35,16 +35,8 @@
       })(window, document, "script", "dataLayer", "GTM-KCQCDD3");
     </script>
     <!-- End Google Tag Manager -->
-
-    <style>
-      .bkgimg {
-        display: block;
-        background-image: url(Pics/citysketch.png);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    </style>
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -108,33 +100,29 @@
       <div class="zipcode-section mb-3">
         <header>
           <div class="mainTitle pt-5 fs-1 fw-bold">Get Affordable Lots!</div>
-
           <div class="mainSubtitle fs-3 pb-3">
             We've Helped Over 100K People
           </div>
         </header>
 
-        <div
-          class="quote-pannel container w-25"
-          style="background-color: rgb(247, 247, 247)"
-        >
-          <div class="budget-info">Latest Listing As Low As $500/ mo.</div>
-          <div class="container-sm d-flex my-2">
+        <div class="container bg-secondary text-white w-25">
+          <div class="pt-3">Latest Listing As Low As $500/ mo.</div>
+          <div class="row container py-3">
             <input
               type="zipcode"
-              class="form-control"
+              class="col form-control text-center"
               id="search"
               placeholder="Enter Zipcode"
             />
             <button
               type="submit"
-              class="btn btn-primary p-3 text-md-center"
+              class="col-4 btn btn-primary ms-3 text-center"
               id="next"
             >
               Next
             </button>
           </div>
-          <div class="mainSubtext pb-3">It only takes 15 seconds.</div>
+          <div class="pb-3">It only takes 15 seconds.</div>
         </div>
 
         <div class="trusted-info">
@@ -144,31 +132,16 @@
           >
         </div>
       </div>
+      <img src="Pics/citysketch.png" />
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <div class="presscoverage pt-5 pb-2">Our 2020 Press Coverage:</div>
+      <div class="pt-5 pb-2">Our 2020 Press Coverage:</div>
+      <img src="Pics/brands.png" alt="brands" class="mb-5" />
     </div>
-    <img
-      src="Pics/brands.png"
-      alt="brands"
-      class="brands mb-5"
-      style="padding-left: 180px"
-    />
 
     <section class="aboutMain container">
       <div class="row">
-        <img class="col" src="Pics/Lots.jpeg" />
-        <div class="col">
+        <img class="col-sm-5" src="Pics/Lots.jpeg" />
+        <div class="col-sm-7">
           <br />
           <br />
           <h3>A Rental Revolution</h3>
@@ -190,34 +163,50 @@
       <h1 class="p-md-3 text-center">Sample Listings You May Like</h1>
       <div class="container">
         <script>
-          let homeTypes = ['bungalow','cluster','mansion']
-          let homePrices = ['$475','$629','$1,100']
+          let homeTypes = ["bungalow", "cluster", "mansion"];
+          let homePrices = ["$475", "$629", "$1,100"];
           let homeTitle = [
-            'Beautiful Single Family Home <br />',
-            'Gorgeous Modern Updated Home <br />',
-            'Amazing Home With Great Park Views <br />'
-          ]
+            "Beautiful Single Family Home",
+            "Gorgeous Modern Updated Home",
+            "Amazing Home With Great Park Views",
+          ];
           let homeDesc = [
-            'In a great family neighborhood <br /> High ceilings, air conditioning, sprinklers on timer. <br> Hardwood floors, updated kitchen including stainless steel appliances! <br/>',
-            'On a quiet street <br /> This home is located in a tree lined street on a half-acre in a quiet cul-de-sac. <br> Beautiful landscaping, large master bedroom with walk-in closet<br />',
-            'Near a school and park <br /> Large Kitchen with tons of cabinetry, granite and counterspace. <br> Heated floors, beautiful views, and a fully landscaped yard<br />'
-          ]
+            "In a great family neighborhood <br /> High ceilings, air conditioning, sprinklers on timer. <br> Hardwood floors, updated kitchen including stainless steel appliances! <br/>",
+            "On a quiet street <br /> This home is located in a tree lined street on a half-acre in a quiet cul-de-sac. <br> Beautiful landscaping, large master bedroom with walk-in closet<br />",
+            "Near a school and park <br /> Large Kitchen with tons of cabinetry, granite and counterspace. <br> Heated floors, beautiful views, and a fully landscaped yard<br />",
+          ];
 
           for (var i = 0; i < 3; i++) {
             document.write(
               '<div class="row">' +
                 '<div class="col-sm-4 border border-3 rounded">' +
-                  '<img src="Pics/HomeTypes/'+ homeTypes[i] +'.png" class="img-fluid img-thumbnail text-center" width="200px">' +
-                '</div>' +
+                '<img src="Pics/HomeTypes/' +
+                homeTypes[i] +
+                '.png" class="img-fluid img-thumbnail text-center" width="200px">' +
+                "</div>" +
                 '<div class="col-sm-1"> </div>' +
                 '<div class="col-sm-7 border border-3 rounded">' +
-                  '<h4>'+ homeTitle[i] + homePrices [i] +'</h4> <br/>' +
-                  '<p>'+ homeDesc[i] +'</p>' +
-                  '<button class="btn btn-primary mt-2"> MAKE OFFER </button>' +
+                "<div class=row>" +
+                '<h4 class="col-7">' +
+                homeTitle[i] +
+                "</h4>" +
+                '<h4 class="col text-end">' +
+                homePrices[i] +
+                "</h4>" +
+                "</div>" +
+                "<br/>" +
+                "<p>" +
+                homeDesc[i] +
+                "</p>" +
+                '<div class="text-end">' +
+                '<button class="btn btn-primary"> MAKE OFFER </button>' +
                 '</div>' +
-              '</div>' +
-              '<br>' );
+                "</div>" +
+                "</div>" +
+                "<br>"
+            );
           }
+          
         </script>
         <!-- <div class="row">
           <div class="col">
@@ -266,8 +255,19 @@
         </div> -->
       </div>
     </main>
-
-    <section class="testimonials container">
+    <div class="container">
+      <div class="row bg-info">
+        <h2 class="col-7 text-center py-3">Find A Lot In Your Area</h2>
+        <input
+          type="text"
+          pattern="[0-9]{5}"
+          class="col-2 text-center my-3"
+          placeholder="YOUR ZIP CODE"
+        />
+        <button class="col-1 btn btn-success ms-3 my-3">NEXT</button>
+      </div>
+    </div>
+    <section class="testimonials container mb-5">
       <h2 class="text-center py-5">WHAT OUR CUSTOMERS SAY ABOUT US</h2>
       <div class="container"></div>
       <div class="row">
@@ -299,16 +299,24 @@
         </div>
       </div>
     </section>
+    <section>
+      <picture>
+        <img src="Pics/family.jpeg" alt="family" class="row mx-auto d-block" />
+        <h2 class="text-center position-static text-black">
+          FIND YOUR DREAM HOME
+        </h2>
+      </picture>
+    </section>
     <footer
       class="container-fluid"
       style="background-color: rgb(235, 235, 235)"
     >
-      <div class="row">
-        <div class="col">
-          <img src="Pics/Icons/house.svg" width="20" />
+      <div class="row container">
+        <div class="col-4 ps-5">
+          <img src="Pics/Icons/house.svg" class="w-25" />
         </div>
 
-        <div class="col">
+        <div class="col-8">
           <div>Contact Us:</div>
           <img src="Pics/Icons/call.png" width="15" />
           <a>1(888) 234-5678</a>
